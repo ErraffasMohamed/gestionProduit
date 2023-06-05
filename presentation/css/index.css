@@ -15,6 +15,16 @@
       height: auto; 
   }
 
+  #xsIcon
+  {
+      width: 80px; 
+      height: auto; 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      
+  }
+
   #hv {
     width: 1000px; 
     height: auto; 
@@ -47,7 +57,6 @@
   #seCol
   {
     color: #4F709C;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
   }
 
