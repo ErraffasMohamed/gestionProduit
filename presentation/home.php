@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +21,7 @@
             <p>GESTION DE STOCK</p>
         </div>
 
-
+        <form action="../services/createProduit.service.php" method="post">
         <div class="inputs">
             <input name="title" placeholder="title" type="text" id="title">
             <div class="price">
@@ -28,6 +33,7 @@
             <button id="submit" name="create">Create</button>
 
         </div>
+        </form>
         <div class="outputs">
             <div class="searchBlock">
                 <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">

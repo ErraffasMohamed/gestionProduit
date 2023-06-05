@@ -15,10 +15,10 @@ class ProduitCRUD {
     }
 
     // Create a new product
-    public function createProduit($title, $price, $taxes, $ads, $discount, $total, $category) {
-        $sql = "INSERT INTO produit (id,title, price, taxes, ads, discount, total, category) VALUES (?,?, ?, ?, ?, ?, ?, ?)";
+    public function createProduit($title, $price, $quantity, $category) {
+        $sql = "INSERT INTO produit (title, price, qte, category) VALUES (?, ?, ?, ?)";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bind_param("isddddds",getLastInsertedId()+1,$title, $price, $taxes, $ads, $discount, $total, $category);
+        $stmt->bind_param("sdds",getLastInsertedId()+1,$title, $price, $quantity,$category);
         if ($stmt->execute()) {
             return true;
         } else {
@@ -58,7 +58,7 @@ class ProduitCRUD {
     }
 
     // Update a product
-    public function updateProduit($id, $title, $price, $taxes, $ads, $discount, $total, $category) {
+    public function updateProduit($id, $title, $price, $quantity, $category) {
         $sql = "UPDATE produit SET title=?, price=?, taxes=?, ads=?, discount=?, total=?, category=? WHERE id=?";
         $stmt = $this->conn->prepare($sql);
         $stmt->bind_param("sdddddsi", $title, $price, $taxes, $ads, $discount, $total, $category, $id);

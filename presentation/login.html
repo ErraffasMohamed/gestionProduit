@@ -15,15 +15,14 @@
             <img src="../resources/img/bg2.svg">
         </div>
         <div class="login-content">
-            <form action="../metier/login.php" method="POST">
+            <form action="../services/user.service.php" method="POST">
                 <h2 class="title">Bienvenue</h2>
                 <div class="input-div one">
                     <div class="i">
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="div">
-                        <h5>nom</h5>
-                        <input type="text" class="input" name="email_tele">
+                        <input type="text" class="input" name="email" placeholder="exemple@gmail.com">
                     </div>
                 </div>
                 <div class="input-div pass">
@@ -31,11 +30,11 @@
                         <i class="fas fa-lock"></i>
                     </div>
                     <div class="div">
-                        <h5>mot de passe</h5>
-                        <input type="password" class="input" name="mot_de_passe">
+                        <h5></h5>
+                        <input type="password" class="input" name="password" placeholder="mot de passe">
                     </div>
                 </div>
-                <input type="submit" class="btn" value="valider" name="valider">
+                <input type="submit" class="btn" value="valider" name="login">
             </form>
         </div>
     </div>
