@@ -8,6 +8,12 @@
     border-radius: 8px;
     overflow: hidden;
   }
+
+  .xsImage
+  {
+      width: 100px; 
+      height: auto; 
+  }
   
   img{
     width: 100%;
