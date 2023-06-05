@@ -12,7 +12,7 @@
   .xsImage
   {
       width: 80px; 
-      height: auto; 
+      height: auto;
   }
 
   #xsIcon
@@ -30,6 +30,7 @@
     height: auto; 
     box-shadow: none; 
     transition: box-shadow 0.3s; 
+    border-radius: 16px;
   }
 
   #hv:hover {
@@ -39,25 +40,22 @@
   }
 
   #tryit{       
-    background-color: #27374D;
+    background-color: #F05454;
     color: #DDE6ED;
   }
 
   #tryit:hover{
-    background-color: #D6E6F2;
-    color: #27374D;
+    background-color: #a50746;
+    color: beige;
+    opacity:80%;
     box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
   }
 
   #mainCol{
     color: #3C486B;
     text-transform: uppercase;
-  }
-
-  #seCol
-  {
-    color: #4F709C;
-    font-size: 25px;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgb(17, 28, 35);
   }
 
   #col{
